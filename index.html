@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name='author' content='JoseDiaz'>
+    <meta name='description' content='pagina de lista de tareas'/>
+    <meta name='keywords' content=' lista, tareas' />
+    <meta name='robots' content='index, follow' />
+    <link rel='stylesheet' href='style.css'>
+	<title>TodoApp</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+		integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+	<section class="todo-container">
+		<h1>
+			Lista de tareas
+		</h1>
+		<form class="add-form">
+			<div class="input-container">
+				<img src="./img/vector.svg" alt="Lupa de busqueda" />
+
+				<input type="text" class="input-text" placeholder="Ingresá una tarea" />
+			</div>
+			<button class="add-btn">Agregar</button>
+		</form>
+	</section>
+	<ul class="tasks-list"></ul>
+	<button class="deleteAll-btn">Borrar tareas</button>
+	<script src="./app.js"></script>
+</body>
+
+</html>
