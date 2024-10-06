@@ -1,3 +1,4 @@
+//Llamamos a los elementos
 const input = document.querySelector(".input-text");
 const addForm = document.querySelector(".add-form");
 const taskList = document.querySelector(".tasks-list");
@@ -5,14 +6,18 @@ const deleteBtn = document.querySelector(".deleteAll-btn");
 
 let tasks = JSON.parse(localStorage.getItem("tasks")) || []; 
 
+
+//funcion para guardar la lista en el localStorage
 const saveOnLocalStorage = (taskList) => {
     localStorage.setItem("tasks", JSON.stringify(taskList)); 
 }
 
+//Funcion para crear un elemento de tarea
 const createTask = (task) => {
     return `<li>${task.name} <img class="delete-btn" src="./img/delete.svg" alt="boton de borrar" data-name=${task.name}></li>`;
 }
 
+//Funcion para renderizar la lista de tareas
 const renderTasksList = (todoList) => {
     taskList.innerHTML = todoList.map((task) => createTask(task)).join("");
 }
